@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFF00"/> <!-- Yellow color for comparing elements -->
+    <corners android:radius="5dp"/>
+</shape>

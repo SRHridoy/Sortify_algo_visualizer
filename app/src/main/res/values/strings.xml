@@ -4,4 +4,6 @@
     <string name="enter_the_size_here">Enter the size here</string>
     <string name="enter_size_here">Enter here</string>
     <string name="enter_the_array_elemets">Enter the array elemets</string>
+    <string name="linear_search_btn">Linear Search</string>
+    <string name="enter_the_key_you_want_to_search">Enter the key you want to search</string>
 </resources>

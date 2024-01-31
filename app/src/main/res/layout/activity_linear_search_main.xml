@@ -8,46 +8,107 @@
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".searchingActivities.LinearSearchMainActivity">
-
-    <TextView
-        android:id="@+id/size"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:text="@string/enter_the_size_of_the_array"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        />
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/enter_the_size_of_the_array"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                />
 
-    <EditText
-        android:id="@+id/editTextSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:layout_marginTop="15dp"
-        android:gravity="center"
-        android:hint="@string/enter_size_here"
-        android:autofillHints="" />
+            <EditText
+                android:id="@+id/edtTxtSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="@string/enter_size_here"
+                android:autofillHints="" />
 
-    <TextView
-        android:id="@+id/txtArray"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_the_array_elemets"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txtArray"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_the_array_elemets"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"/>
 
-    <EditText
-    android:id="@+id/editTextArray"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:inputType="number"
-    android:layout_marginTop="15dp"
-    android:gravity="center"
-    android:hint="@string/enter_size_here"
-    android:autofillHints="" />
+            <EditText
+                android:id="@+id/edtTxtArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="@string/enter_size_here"
+                android:autofillHints="" />
+            <TextView
+                android:id="@+id/txtKey"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_the_key_you_want_to_search"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edtTxtKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="@string/enter_size_here"
+                android:autofillHints="" />
+
+
+            <Button
+                android:id="@+id/btnLinearSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/linear_search_btn"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#D50000"
+                />
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/arrayContainer" android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>
